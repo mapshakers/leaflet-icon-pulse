@@ -30,8 +30,8 @@ var marker = new L.marker([50,15],{icon: pulsingIcon}).addTo(map);
 ### Options
 | Property        | Description            | Default Value | Possible  values         |
 | --------------- | ---------------------- | ------------- | ------------------------ |
-| color           | Color of icon.         | 'red'         | any CSS color            |
-| iconSize        | Size of L.divIcon      | [12,12]       | <Point> [width,height]   |
+| color           | color of icon         | 'red'         | any CSS color            |
+| iconSize        | size of L.divIcon      | [12,12]       | <Point> [width,height]   |
 
 
 ## License
