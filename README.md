@@ -18,7 +18,6 @@ Include the CSS and JavaScript files located in \dist folder.
 <script src="src/L.Icon.Pulse.js" />
 <link rel="stylesheet" href="src/L.Icon.Pulse.css" />
 ```
-See the included examples for usage.
 
 ### Usage
 Create a new L.Icon.Pulse
