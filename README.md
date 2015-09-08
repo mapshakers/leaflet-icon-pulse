@@ -25,7 +25,7 @@ Create a new L.Icon.Pulse
 
 ```javascript
 var pulsingIcon = L.icon.pulse({size:[20,20],color:'red'});
-var marker = new L.marker([50,15],{icon: pulsingIcon}).addTo(map);
+var marker = L.marker([50,15],{icon: pulsingIcon}).addTo(map);
 ```
 ### Options
 | Property        | Description            | Default Value | Possible  values         |
