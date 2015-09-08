@@ -15,8 +15,8 @@ L.Icon.Pulse = L.DivIcon.extend({
         this.options.className = this.options.className+' leaflet-pulsing-icon '+uniqueClassName;
 
         // prepare styles
-        var css = '.'+unique+'{background-color:'+this.options.color+';}'
-            css += '.'+unique+':after{box-shadow: 0 0 6px 2px '+this.options.color+';}';
+        var css = '.'+uniqueClassName+'{background-color:'+this.options.color+';}';
+            css += '.'+uniqueClassName+':after{box-shadow: 0 0 6px 2px '+this.options.color+';}';
 
         // CREATE STYLE ELEMENT
         var styleEl=document.createElement('style');
