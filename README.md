@@ -9,7 +9,7 @@ A very simple [Leaflet](http://leafletjs.com) plugin provides pulsing icon.
 *Requires Leaflet 0.7.0 or newer and modern browser*
 
 ## Demo
-~~[Check out demo!](http://filipzava.github.io/leaflet-pulse-marker)~~
+[Check out demo!](http://mapshakers.github.io/leaflet-pulse-icon)
 ## Using the plugin
 #### Add the JavaScript and CSS files
 
