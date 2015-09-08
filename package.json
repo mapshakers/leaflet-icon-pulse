@@ -1,0 +1,12 @@
+{
+  "name": "leaflet-pulse-icon",
+  "version": "0.0.1",
+  "description": "A pulsing icon plugin.",
+  "main": "src/L.Icon.Pulse.js",
+  "author": "Filip Zavadil",
+  "license": "MIT",
+  "dependencies": {
+    "leaflet": ">=0.7.3"
+  },
+  "keywords": ["icon", "map","marker","leaflet"]
+}
