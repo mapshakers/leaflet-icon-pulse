@@ -23,7 +23,7 @@ Include the CSS and JavaScript files located in \dist folder.
 Create a new L.Icon.Pulse
 
 ```javascript
-var pulsingIcon = L.icon.pulse({size:[20,20],color:'red'});
+var pulsingIcon = L.icon.pulse({iconSize:[20,20],color:'red'});
 var marker = L.marker([50,15],{icon: pulsingIcon}).addTo(map);
 ```
 ### Options
