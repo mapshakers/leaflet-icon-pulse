@@ -1,7 +1,8 @@
 leaflet-pulse-icon
 =====================
-<img src="http://filipzava.github.io/leaflet-pulse-marker/leaflet-pulse-marker.png" alt="leaflet-pulse-marker" />
-
+<div style="text-align:center" align="center">
+  <img src="http://filipzava.github.io/leaflet-pulse-marker/leaflet-pulse-marker.png" alt="leaflet-pulse-marker" />
+</div>
 A very simple [Leaflet](http://leafletjs.com) plugin provides pulsing icon.
 
 *Requires Leaflet 0.7.0 or newer and modern browser*
