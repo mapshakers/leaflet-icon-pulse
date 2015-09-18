@@ -13,7 +13,7 @@ A very simple [Leaflet](http://leafletjs.com) plugin provides pulsing icon.
 ## Using the plugin
 #### Add the JavaScript and CSS files
 
-Include the CSS and JavaScript files located in \dist folder.
+Include the CSS and JavaScript files located in \src folder.
 
 ```html
 <script src="src/L.Icon.Pulse.js" />
