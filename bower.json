@@ -1,0 +1,25 @@
+{
+  "name": "leaflet-icon-pulse",
+  "homepage": "https://github.com/mapshakers/leaflet-icon-pulse",
+  "authors": [
+    "Filip Zavadil"
+  ],
+  "description": "A pulsing icon plugin for Leaflet",
+  "main": ["dist/L.Icon.Pulse.js", "dist/L.Icon.Pulse.css"],
+  "moduleType": [],
+  "keywords": [
+    "icon",
+    "map",
+    "marker",
+    "leaflet",
+    "pulse"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
