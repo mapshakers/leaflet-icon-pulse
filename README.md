@@ -1,7 +1,7 @@
 leaflet-pulse-icon
 =====================
 <div style="text-align:center" align="center">
-  <img src="http://mapshakers.github.io/projects/leaflet-pulse-icon/leaflet-pulse-icon.gif" alt="leaflet-pulse-icon" />
+  <img src="http://mapshakers.github.io/projects/leaflet-pulse-icon/leaflet-pulsing-icon.gif" alt="leaflet-pulse-icon" />
 </div>
 
 A very simple [Leaflet](http://leafletjs.com) plugin provides pulsing icon.
