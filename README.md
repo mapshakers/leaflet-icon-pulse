@@ -11,13 +11,17 @@ A very simple [Leaflet](http://leafletjs.com) plugin provides pulsing icon.
 ## Demo
 [Check out demo!](http://mapshakers.github.io/projects/leaflet-pulse-icon)
 ## Using the plugin
-#### Add the JavaScript and CSS files
+#### Install
+* clone repo
+* run `npm install`
 
-Include the CSS and JavaScript files located in ```\src``` folder.
+Or copy files from releases.
 
+#### Use
+Include the CSS and JavaScript files located in ```\dist``` directory.
 ```html
-<script src="src/L.Icon.Pulse.js" />
-<link rel="stylesheet" href="src/L.Icon.Pulse.css" />
+<script src=".../L.Icon.Pulse.js" />
+<link rel="stylesheet" href=".../L.Icon.Pulse.css" />
 ```
 
 ### Usage
