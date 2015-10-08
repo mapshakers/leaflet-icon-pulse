@@ -1,3 +1,4 @@
 .gobble-watch/
+.gobble-build/
 dist/
 node_modules/
