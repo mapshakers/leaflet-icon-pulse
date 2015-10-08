@@ -1,38 +1,54 @@
-L.Icon.Pulse = L.DivIcon.extend({
+(function(window) {
 
-    options: {
-        className: '',
-        iconSize: [12,12],
-        color: 'red'
-    },
+    L.Icon.Pulse = L.DivIcon.extend({
 
-    initialize: function (options) {
-        L.setOptions(this,options);
+        options: {
+            className: '',
+            iconSize: [12,12],
+            color: 'red'
+        },
 
-        // creating unique class name
-        var uniqueClassName = 'lpi-'+ new Date().getTime()+'-'+Math.round(Math.random()*100000);
+        initialize: function (options) {
+            L.setOptions(this,options);
 
-        this.options.className = this.options.className+' leaflet-pulsing-icon '+uniqueClassName;
+            // creating unique class name
+            var uniqueClassName = 'lpi-'+ new Date().getTime()+'-'+Math.round(Math.random()*100000);
 
-        // prepare styles
-        var css = '.'+uniqueClassName+'{background-color:'+this.options.color+';}';
+            this.options.className = this.options.className+' leaflet-pulsing-icon '+uniqueClassName;
+
+            // prepare styles
+            var css = '.'+uniqueClassName+'{background-color:'+this.options.color+';}';
             css += '.'+uniqueClassName+':after{box-shadow: 0 0 6px 2px '+this.options.color+';}';
 
-        // CREATE STYLE ELEMENT
-        var styleEl=document.createElement('style');
-        if (styleEl.styleSheet)
-            styleEl.styleSheet.cssText=css;
-        else
-            styleEl.appendChild(document.createTextNode(css));
+            // CREATE STYLE ELEMENT
+            var styleEl=document.createElement('style');
+            if (styleEl.styleSheet)
+                styleEl.styleSheet.cssText=css;
+            else
+                styleEl.appendChild(document.createTextNode(css));
 
-        // appending style element to document
-        document.getElementsByTagName('head')[0].appendChild(styleEl);
+            // appending style element to document
+            document.getElementsByTagName('head')[0].appendChild(styleEl);
 
-        // initialize icon
-        L.DivIcon.prototype.initialize.call(this,options);
-    }
-});
+            // initialize icon
+            L.DivIcon.prototype.initialize.call(this,options);
+        }
+    });
 
-L.icon.pulse = function (options) {
-    return new L.Icon.Pulse(options);
-};
+    L.icon.pulse = function (options) {
+        return new L.Icon.Pulse(options);
+    };
+
+
+    L.Marker.Pulse = L.Marker.extend({
+        initialize: function (latlng,options) {
+            options.icon = L.icon.pulse(options);
+            L.Marker.prototype.initialize.call(this, latlng, options);
+        }
+    });
+
+    L.marker.pulse = function (latlng,options) {
+        return new L.Marker.Pulse(latlng,options);
+    };
+
+})(window);
