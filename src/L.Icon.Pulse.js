@@ -5,33 +5,54 @@
         options: {
             className: '',
             iconSize: [12,12],
-            color: 'red'
+            color: 'red',
+            animate: true,
+            heartbeat: 1,
         },
 
         initialize: function (options) {
             L.setOptions(this,options);
 
-            // creating unique class name
+            // css
+            
             var uniqueClassName = 'lpi-'+ new Date().getTime()+'-'+Math.round(Math.random()*100000);
+
+            var before = ['background-color: '+this.options.color];
+            var after = [
+
+                'box-shadow: 0 0 6px 2px '+this.options.color,
+
+                'animation: pulsate ' + this.options.heartbeat + 's ease-out',
+                'animation-iteration-count: infinite',
+                'animation-delay: '+ (this.options.heartbeat + .1) + 's',
+            ];
+
+            if (!this.options.animate){
+                after.push('animation: none');
+            }
+
+            var css = [
+                '.'+uniqueClassName+'{'+before.join(';')+';}',
+                '.'+uniqueClassName+':after{'+after.join(';')+';}',
+            ].join('');
+ 
+            var el = document.createElement('style');
+            if (el.styleSheet){
+                el.styleSheet.cssText = css;
+            } else {
+                el.appendChild(document.createTextNode(css));
+            }
+
+            document.getElementsByTagName('head')[0].appendChild(el);
+
+            // apply css class
 
             this.options.className = this.options.className+' leaflet-pulsing-icon '+uniqueClassName;
 
-            // prepare styles
-            var css = '.'+uniqueClassName+'{background-color:'+this.options.color+';}';
-            css += '.'+uniqueClassName+':after{box-shadow: 0 0 6px 2px '+this.options.color+';}';
-
-            // CREATE STYLE ELEMENT
-            var styleEl=document.createElement('style');
-            if (styleEl.styleSheet)
-                styleEl.styleSheet.cssText=css;
-            else
-                styleEl.appendChild(document.createTextNode(css));
-
-            // appending style element to document
-            document.getElementsByTagName('head')[0].appendChild(styleEl);
-
             // initialize icon
-            L.DivIcon.prototype.initialize.call(this,options);
+            
+            L.DivIcon.prototype.initialize.call(this, options);
+        
         }
     });
 
