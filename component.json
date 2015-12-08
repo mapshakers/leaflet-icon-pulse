@@ -1,0 +1,10 @@
+{
+  "name": "leaflet-icon-pulse",
+  "main": "src/L.Icon.Pulse.js",
+  "scripts": [
+    "src/L.Icon.Pulse.js"
+  ],
+  "styles": [
+    "src/L.Icon.Pulse.css"
+  ]
+}

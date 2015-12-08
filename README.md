@@ -34,9 +34,10 @@ var marker = L.marker([50,15],{icon: pulsingIcon}).addTo(map);
 ### Options
 | Property        | Description            | Default Value | Possible  values         |
 | --------------- | ---------------------- | ------------- | ------------------------ |
-| color           | color of icon         | 'red'         | any CSS color            |
+| color           | color of icon          | 'red'         | any CSS color            |
 | iconSize        | size of L.divIcon      | [12,12]       | <Point> [width,height]   |
-
+| animate         | enable pulsing         | true          | any CSS color            |
+| heatbeat        | pulsing beat           | 1             | number (seconds)         |
 
 ## License
 **leaflet-pulse-icon** is free software, and may be redistributed under the MIT-LICENSE.

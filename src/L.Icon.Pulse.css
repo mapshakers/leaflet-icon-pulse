@@ -12,9 +12,6 @@
     position: absolute;
     margin: -100% 0 0 -100%;
 
-    animation: pulsate 1s ease-out;
-    animation-iteration-count: infinite;
-    animation-delay: 1.1s;
 }
 
 @keyframes pulsate {
