@@ -20,8 +20,8 @@ Or copy files from releases.
 #### Use
 Include the CSS and JavaScript files located in ```\dist``` directory.
 ```html
-<script src=".../L.Icon.Pulse.js" />
-<link rel="stylesheet" href=".../L.Icon.Pulse.css" />
+<script src="../L.Icon.Pulse.js" />
+<link rel="stylesheet" href="../L.Icon.Pulse.css" />
 ```
 
 ### Usage
