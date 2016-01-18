@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mapshakers/leaflet-icon-pulse.git"
+    "url": "git+https://github.com/mapshakers/leaflet-icon-pulse.git"
   },
   "dependencies": {
     "leaflet": ">=0.7.3",
@@ -24,5 +24,13 @@
   "scripts": {
     "postinstall": "gobble build -f dist",
     "watch": "gobble watch -f dist"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/mapshakers/leaflet-icon-pulse/issues"
+  },
+  "homepage": "https://github.com/mapshakers/leaflet-icon-pulse#readme",
+  "directories": {
+    "example": "example"
+  },
+  "devDependencies": {}
 }

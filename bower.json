@@ -5,8 +5,14 @@
     "Filip Zavadil"
   ],
   "description": "A pulsing icon plugin for Leaflet",
-  "main": ["dist/L.Icon.Pulse.js", "dist/L.Icon.Pulse.css"],
-  "moduleType": [],
+  "main": [
+    "dist/L.Icon.Pulse.js",
+    "dist/L.Icon.Pulse.css"
+  ],
+  "moduleType": [
+    "globals",
+    "node"
+  ],
   "keywords": [
     "icon",
     "map",
@@ -21,5 +27,6 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "version": "0.1.0"
 }
