@@ -29,6 +29,7 @@
 
             if (!this.options.animate){
                 after.push('animation: none');
+                after.push('box-shadow:none');
             }
 
             var css = [
