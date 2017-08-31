@@ -36,7 +36,7 @@ var marker = L.marker([50,15],{icon: pulsingIcon}).addTo(map);
 | --------------- | ---------------------- | ------------- | ------------------------ |
 | color           | color of icon          | 'red'         | any CSS color            |
 | iconSize        | size of L.divIcon      | [12,12]       | <Point> [width,height]   |
-| animate         | enable pulsing         | true          | any CSS color            |
+| animate         | enable pulsing         | true          | true\|false            |
 | heartbeat       | pulsing beat           | 1             | number (seconds)         |
 
 ## License
