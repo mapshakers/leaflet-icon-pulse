@@ -5,6 +5,7 @@
         options: {
             className: '',
             iconSize: [12,12],
+            fillColor: 'red',
             color: 'red',
             animate: true,
             heartbeat: 1,
@@ -17,7 +18,7 @@
             
             var uniqueClassName = 'lpi-'+ new Date().getTime()+'-'+Math.round(Math.random()*100000);
 
-            var before = ['background-color: '+this.options.color];
+            var before = ['background-color: '+this.options.fillColor];
             var after = [
 
                 'box-shadow: 0 0 6px 2px '+this.options.color,
