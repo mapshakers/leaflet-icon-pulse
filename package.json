@@ -1,6 +1,6 @@
 {
   "name": "leaflet-pulse-icon",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A pulsing icon plugin.",
   "main": "src/L.Icon.Pulse.js",
   "author": "Filip Zavadil",
