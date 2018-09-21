@@ -10,10 +10,7 @@
     "url": "git+https://github.com/mapshakers/leaflet-icon-pulse.git"
   },
   "dependencies": {
-    "leaflet": ">=0.7.3",
-    "gobble-autoprefixer": "^0.1.1",
-    "gobble-cli": "^0.4.2",
-    "gobble": "^0.10.2"
+    "leaflet": ">=0.7.3"
   },
   "keywords": [
     "icon",
@@ -21,10 +18,6 @@
     "marker",
     "leaflet"
   ],
-  "scripts": {
-    "postinstall": "gobble build -f dist",
-    "watch": "gobble watch -f dist"
-  },
   "bugs": {
     "url": "https://github.com/mapshakers/leaflet-icon-pulse/issues"
   },
