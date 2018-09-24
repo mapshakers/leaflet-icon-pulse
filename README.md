@@ -12,10 +12,9 @@ A very simple [Leaflet](http://leafletjs.com) plugin provides pulsing icon.
 [Check out demo!](http://mapshakers.github.io/projects/leaflet-pulse-icon)
 ## Using the plugin
 #### Install
-`npm install leaflet-pulse-icon` </br>
-or `bower install leaflet-pulse-icon` </br>
-or  clone repo & run `npm install` </br>
-or  copy files from releases 
+`npm install @ansur/leaflet-pulse-icon` </br>
+or clone repo & run `npm install` </br>
+or copy files from releases 
 
 #### Use
 Include the CSS and JavaScript files located in ```\dist``` directory.
