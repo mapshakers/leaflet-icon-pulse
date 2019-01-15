@@ -1,5 +1,5 @@
 {
-  "name": "@ansur/leaflet-pulse-icon",
+  "name": "leaflet-pulse-icon",
   "version": "0.1.1",
   "description": "A pulsing icon plugin.",
   "main": "src/L.Icon.Pulse.js",
@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/therealice/leaflet-icon-pulse.git"
+    "url": "git+https://github.com/mapshakers/leaflet-icon-pulse.git"
   },
   "dependencies": {
     "leaflet": ">=0.7.3"
@@ -19,9 +19,9 @@
     "leaflet"
   ],
   "bugs": {
-    "url": "https://github.com/therealice/leaflet-icon-pulse/issues"
+    "url": "https://github.com/mapshakers/leaflet-icon-pulse/issues"
   },
-  "homepage": "https://github.com/therealice/leaflet-icon-pulse#readme",
+  "homepage": "https://github.com/mapshakers/leaflet-icon-pulse#readme",
   "directories": {
     "example": "example"
   },
