@@ -26,6 +26,8 @@
                 'animation: pulsate ' + this.options.heartbeat + 's ease-out',
                 'animation-iteration-count: infinite',
                 'animation-delay: '+ (this.options.heartbeat + .1) + 's',
+                'position:absolute',
+                'left:0',
             ];
 
             if (!this.options.animate){
